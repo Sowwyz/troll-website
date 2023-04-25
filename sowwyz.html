@@ -1,0 +1,122 @@
+﻿<!--Developer By Sowwyz#1337-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sowwyz#1337</title>
+    <link rel="shortcut icon" href="img/sowwyz.ico" type="image/png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        /* Sowwyz#1337 */
+        pre {
+            text-align: center;
+            color: white;
+            animation: fade-in 15s ease-out;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        /* Sowwyz#1337 */
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            width: 5px;
+            height: 5px;
+            background-color: white;
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+
+        #image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fade-in 15s ease-out forwards;
+        }
+
+        /* Sowwyz#1337 */
+        @keyframes fall {
+            0% {
+                transform: translateY(-10px) translateX(0);
+            }
+
+            100% {
+                transform: translateY(100vh) translateX(10vw);
+            }
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Developer By Sowwyz#1337-->
+    <!--Developer By Sowwyz#1337-->
+    <!--Developer By Sowwyz#1337-->
+    <!--Developer By Sowwyz#1337-->
+    <!--Developer By Sowwyz#1337-->
+    <!--Developer By Sowwyz#1337-->
+    <pre>
+<!--Developer By Sowwyz#1337-->
+<!--Developer By Sowwyz#1337-->
+<!--Developer By Sowwyz#1337-->
+ <!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337--><!--Developer By Sowwyz#1337-->༒  Sowwyz#1337  ༒
+
+ </pre>
+    <!--Developer By Sowwyz#1337-->
+    <img id="image" src="img/sowwyz.jpg" alt="Sowwyz ">
+
+    <audio id="audio" src="/sao.mp3"></audio>
+    <!--Developer By Sowwyz#1337-->
+    <script>
+        const audio = document.getElementById('audio');
+        audio.currentTime = 0;
+        audio.play();
+
+
+        window.onload = function () {
+            const pre = document.querySelector('pre');
+            pre.style.opacity = 1;
+
+            const image = document.getElementById('image');
+            image.style.opacity = 1;
+        };
+
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = 2 + Math.random() * 4 + 's'; //
+            snowflake.style.animationDelay = Math.random() * 1 + 's'; //
+            snowflake.style.opacity = Math.random() * 0.7 + 0.3;
+            document.body.appendChild(snowflake);
+
+            setTimeout(() => {
+                snowflake.remove();
+            }, (parseFloat(snowflake.style.animationDuration) + parseFloat(snowflake.style.animationDelay)) * 1000);
+        }
+
+        setInterval(createSnowflake, 100); //
+    </script>
+</body>
+<!--Developer By Sowwyz#1337-->
+</html>
+<!--Developer By Sowwyz#1337-->
+<!--Developer By Sowwyz#1337-->
+<!--Developer By Sowwyz#1337-->
+<!--Developer By Sowwyz#1337-->

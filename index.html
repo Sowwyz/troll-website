@@ -1,0 +1,138 @@
+<!--Developer By Sowwyz#1337-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sowwyz</title>
+    <link rel="shortcut icon" href="img/sowwyz.ico" type="image/png">
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        /* Sowwyz#1337 */
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            width: 5px;
+            height: 5px;
+            background-color: white;
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10px) translateX(0);
+            }
+
+            100% {
+                transform: translateY(100vh) translateX(10vw);
+            }
+        }
+        /* Sowwyz#1337 */
+        h1 {
+            font-size: 60px;
+            font-style: italic;
+            margin: 0;
+            color: white;
+            text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 160px white;
+            animation: shadow-pulse 3s ease-in-out infinite;
+            cursor: pointer;
+        }
+
+            h1 span {
+                font-style: italic;
+                font-size: 54px;
+                display: inline-block;
+                transform: translateY(5px);
+                animation: letter-pulse 3s ease-in-out infinite;
+            }
+
+        @keyframes shadow-pulse {
+            0% {
+                text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 160px white;
+            }
+
+            50% {
+                text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white;
+            }
+
+            100% {
+                text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white;
+            }
+        }
+
+        @keyframes letter-pulse {
+            0% {
+                transform: translateY(5px) scale(1);
+            }
+
+            50% {
+                transform: translateY(0) scale(1.2);
+            }
+
+            100% {
+                transform: translateY(5px) scale(1);
+            }
+        }
+    </style>
+
+    <body>
+        <h1><span onclick="playAudioAndRedirect()">enter.</span></h1>
+
+        <audio id="audio" src="/sao.mp3"></audio>
+
+        <script>
+            function createSnowflake() {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.style.left = Math.random() * 100 + 'vw';
+                snowflake.style.animationDuration = 2 + Math.random() * 4 + 's';
+                snowflake.style.animationDelay = Math.random() * 1 + 's';
+                snowflake.style.opacity = Math.random() * 0.7 + 0.3;
+                document.body.appendChild(snowflake);
+
+                setTimeout(() => {
+                    snowflake.remove();
+                }, (parseFloat(snowflake.style.animationDuration) + parseFloat(snowflake.style.animationDelay)) * 1000);
+            }
+            /* Sowwyz#1337 */
+            setInterval(createSnowflake, 100);
+
+            const title = document.querySelector('h1');
+
+            title.addEventListener('mouseenter', () => {
+                title.style.textShadow = '0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px #ff8c00, 0 0 80px #ff8c00, 0 0 160px #ff8c00';
+                title.style.cursor = 'pointer';
+            });
+
+            title.addEventListener('mouseleave', () => {
+                title.style.textShadow = '0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 160px white';
+                title.style.cursor = 'default';
+            });
+            /* Sowwyz#1337 */
+            function playAudioAndRedirect() {
+                localStorage.setItem('isMusicPlaying', 'true');
+                setTimeout(() => {
+                    window.location.href = "sowwyz.html";
+                }, 1000);
+            }
+
+
+        </script>
+    </body>
+</html>
+<!--Sowwyz#1337-->
+<!--Sowwyz#1337-->
+<!--Sowwyz#1337-->
+<!--Sowwyz#1337-->
+<!--Sowwyz#1337-->
+<!--Sowwyz#1337-->
+<!--Sowwyz#1337-->
